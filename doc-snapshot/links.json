@@ -1,0 +1,234 @@
+{
+ "root": "vue",
+ "savedAt": "2026-11-08",
+ "pages": {
+  "/vue/custom-look-and-feel/slots": [],
+  "/vue/using-these-docs": [],
+  "/vue/build-with-agents": [],
+  "/vue": [
+   "/vue/AG-UI-Streams",
+   "/vue/generative-ui/tool-based",
+   "/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/custom-look-and-feel/headless-ui": [
+   "/vue/custom-look-and-feel/css",
+   "/vue/custom-look-and-feel/slots"
+  ],
+  "/vue/prebuilt-components": [
+   "/vue/prebuilt-components/chat",
+   "/vue/prebuilt-components/chat-controls",
+   "/vue/prebuilt-components/popup",
+   "/vue/prebuilt-components/sidebar"
+  ],
+  "/vue/prebuilt-components/copilot-threads-drawer": [
+   "/vue/AG-UI-Streams",
+   "/vue/headless-threads",
+   "/vue/threads-lifecycle"
+  ],
+  "/vue/programmatic-control": [
+   "/vue/custom-look-and-feel/headless-ui"
+  ],
+  "/vue/headless-threads": [
+   "/vue/prebuilt-components/copilot-threads-drawer",
+   "/vue/threads-lifecycle"
+  ],
+  "/vue/frontend-tools": [],
+  "/vue/generative-ui/tool-based": [
+   "/vue/generative-ui/tool-rendering",
+   "/vue/human-in-the-loop"
+  ],
+  "/vue/generative-ui/tool-rendering": [],
+  "/vue/generative-ui/state-rendering": [],
+  "/vue/shared-state": [
+   "/vue/shared-state/agent-readonly",
+   "/vue/shared-state/rendering-in-app",
+   "/vue/shared-state/streaming"
+  ],
+  "/vue/shared-state/rendering-in-app": [
+   "/vue/shared-state",
+   "/vue/shared-state/agent-readonly",
+   "/vue/shared-state/streaming"
+  ],
+  "/vue/generative-ui/mcp-apps": [],
+  "/vue/shared-state/agent-readonly": [
+   "/vue/shared-state",
+   "/vue/shared-state/streaming"
+  ],
+  "/vue/shared-state/streaming": [
+   "/vue/shared-state",
+   "/vue/shared-state/agent-readonly"
+  ],
+  "/vue/human-in-the-loop": [
+   "/vue/human-in-the-loop/headless",
+   "/vue/human-in-the-loop/useInterrupt"
+  ],
+  "/vue/human-in-the-loop/useInterrupt": [],
+  "/vue/human-in-the-loop/headless": [],
+  "/vue/human-in-the-loop/governed-actions": [],
+  "/vue/webmcp": [],
+  "/vue/multi-agent/subagents": [],
+  "/vue/AG-UI-Streams": [],
+  "/vue/threads-lifecycle": [
+   "/vue/headless-threads"
+  ],
+  "/vue/learning": [],
+  "/vue/inspector": [],
+  "/vue/runtime-server-adapter": [],
+  "/vue/threads-import": [],
+  "/vue/concepts/architecture": [],
+  "/vue/concepts/generative-ui-overview": [],
+  "/vue/concepts/which-hook": [
+   "/vue/custom-look-and-feel/slots",
+   "/vue/frontend-tools",
+   "/vue/generative-ui/tool-based",
+   "/vue/generative-ui/tool-rendering",
+   "/vue/human-in-the-loop"
+  ],
+  "/vue/concepts/oss-vs-enterprise": [],
+  "/vue/agentic-protocols": [],
+  "/vue/agentic-protocols/ag-ui": [],
+  "/vue/agentic-protocols/ag-ui-middleware": [],
+  "/vue/agentic-protocols/mcp": [],
+  "/vue/agentic-protocols/a2a": [],
+  "/vue/troubleshooting/common-issues": [],
+  "/vue/troubleshooting/debug-mode": [],
+  "/vue/troubleshooting/event-inspector": [],
+  "/vue/community-frameworks": [],
+  "/vue/langgraph-python": [
+   "/vue/langgraph-python/backend/copilot-runtime",
+   "/vue/langgraph-python/inspector",
+   "/vue/langgraph-python/model-selection",
+   "/vue/langgraph-python/vue/AG-UI-Streams",
+   "/vue/langgraph-python/vue/generative-ui/tool-based",
+   "/vue/langgraph-python/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/langgraph-fastapi": [
+   "/vue/langgraph-fastapi/backend/copilot-runtime",
+   "/vue/langgraph-fastapi/inspector",
+   "/vue/langgraph-fastapi/model-selection",
+   "/vue/langgraph-fastapi/vue/AG-UI-Streams",
+   "/vue/langgraph-fastapi/vue/generative-ui/tool-based",
+   "/vue/langgraph-fastapi/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/mastra": [
+   "/vue/mastra/backend/copilot-runtime",
+   "/vue/mastra/inspector",
+   "/vue/mastra/model-selection",
+   "/vue/mastra/vue/AG-UI-Streams",
+   "/vue/mastra/vue/generative-ui/tool-based",
+   "/vue/mastra/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/crewai-crews": [
+   "/vue/crewai-crews/backend/copilot-runtime",
+   "/vue/crewai-crews/inspector",
+   "/vue/crewai-crews/model-selection",
+   "/vue/crewai-crews/vue/AG-UI-Streams",
+   "/vue/crewai-crews/vue/generative-ui/tool-based",
+   "/vue/crewai-crews/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/google-adk": [
+   "/vue/google-adk/backend/copilot-runtime",
+   "/vue/google-adk/inspector",
+   "/vue/google-adk/model-selection",
+   "/vue/google-adk/vue/AG-UI-Streams",
+   "/vue/google-adk/vue/generative-ui/tool-based",
+   "/vue/google-adk/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/pydantic-ai": [
+   "/vue/pydantic-ai/backend/copilot-runtime",
+   "/vue/pydantic-ai/inspector",
+   "/vue/pydantic-ai/model-selection",
+   "/vue/pydantic-ai/vue/AG-UI-Streams",
+   "/vue/pydantic-ai/vue/generative-ui/tool-based",
+   "/vue/pydantic-ai/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/claude-sdk-python": [
+   "/vue/claude-sdk-python/backend/copilot-runtime",
+   "/vue/claude-sdk-python/inspector",
+   "/vue/claude-sdk-python/model-selection",
+   "/vue/claude-sdk-python/vue/AG-UI-Streams",
+   "/vue/claude-sdk-python/vue/generative-ui/tool-based",
+   "/vue/claude-sdk-python/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/claude-sdk-typescript": [
+   "/vue/claude-sdk-typescript/backend/copilot-runtime",
+   "/vue/claude-sdk-typescript/inspector",
+   "/vue/claude-sdk-typescript/model-selection",
+   "/vue/claude-sdk-typescript/vue/AG-UI-Streams",
+   "/vue/claude-sdk-typescript/vue/generative-ui/tool-based",
+   "/vue/claude-sdk-typescript/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/ag2": [
+   "/vue/ag2/backend/copilot-runtime",
+   "/vue/ag2/inspector",
+   "/vue/ag2/model-selection",
+   "/vue/ag2/vue/AG-UI-Streams",
+   "/vue/ag2/vue/generative-ui/tool-based",
+   "/vue/ag2/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/agno": [
+   "/vue/agno/backend/copilot-runtime",
+   "/vue/agno/inspector",
+   "/vue/agno/model-selection",
+   "/vue/agno/vue/AG-UI-Streams",
+   "/vue/agno/vue/generative-ui/tool-based",
+   "/vue/agno/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/llamaindex": [
+   "/vue/llamaindex/backend/copilot-runtime",
+   "/vue/llamaindex/inspector",
+   "/vue/llamaindex/model-selection",
+   "/vue/llamaindex/vue/AG-UI-Streams",
+   "/vue/llamaindex/vue/generative-ui/tool-based",
+   "/vue/llamaindex/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/strands": [
+   "/vue/strands/backend/copilot-runtime",
+   "/vue/strands/inspector",
+   "/vue/strands/model-selection",
+   "/vue/strands/vue/AG-UI-Streams",
+   "/vue/strands/vue/generative-ui/tool-based",
+   "/vue/strands/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/strands-typescript": [
+   "/vue/strands-typescript/backend/copilot-runtime",
+   "/vue/strands-typescript/inspector",
+   "/vue/strands-typescript/model-selection",
+   "/vue/strands-typescript/vue/AG-UI-Streams",
+   "/vue/strands-typescript/vue/generative-ui/tool-based",
+   "/vue/strands-typescript/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/ms-agent-python": [
+   "/vue/ms-agent-python/backend/copilot-runtime",
+   "/vue/ms-agent-python/inspector",
+   "/vue/ms-agent-python/model-selection",
+   "/vue/ms-agent-python/vue/AG-UI-Streams",
+   "/vue/ms-agent-python/vue/generative-ui/tool-based",
+   "/vue/ms-agent-python/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/ms-agent-dotnet": [
+   "/vue/ms-agent-dotnet/backend/copilot-runtime",
+   "/vue/ms-agent-dotnet/inspector",
+   "/vue/ms-agent-dotnet/model-selection",
+   "/vue/ms-agent-dotnet/vue/AG-UI-Streams",
+   "/vue/ms-agent-dotnet/vue/generative-ui/tool-based",
+   "/vue/ms-agent-dotnet/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/ms-agent-harness-dotnet": [
+   "/vue/ms-agent-harness-dotnet/backend/copilot-runtime",
+   "/vue/ms-agent-harness-dotnet/inspector",
+   "/vue/ms-agent-harness-dotnet/model-selection",
+   "/vue/ms-agent-harness-dotnet/vue/AG-UI-Streams",
+   "/vue/ms-agent-harness-dotnet/vue/generative-ui/tool-based",
+   "/vue/ms-agent-harness-dotnet/vue/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/vue/deepagents": [
+   "/vue/deepagents/backend/copilot-runtime",
+   "/vue/deepagents/inspector",
+   "/vue/deepagents/model-selection",
+   "/vue/deepagents/vue/AG-UI-Streams",
+   "/vue/deepagents/vue/generative-ui/tool-based",
+   "/vue/deepagents/vue/prebuilt-components/copilot-threads-drawer"
+  ]
+ }
+}

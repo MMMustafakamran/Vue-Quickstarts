@@ -1,0 +1,34 @@
+{
+ "clip": "VUEQS-llamaindex-01-Quickstart",
+ "finding": "vueqs 1",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the quickstart page in the CopilotKit docs, for Vue with Llama Index. And umm, I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, with the server dot ts, main dot ts and app dot vue from the doc, copied as they are. CopilotKit Vue is one point eighty-five."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So I asked the chat which agent framework it is, and uh, it does answer, but from the built-in OpenAI agent, not Llama Index. No step on this page ever connects a Llama Index agent."
+  },
+  {
+   "at": "evidence#1",
+   "text": "So look at this. The Vue quickstart link opens the Llama Index landing page, and umm, it's all about the React frontend."
+  },
+  {
+   "at": "evidence#2",
+   "text": "And the only code it shows is a Next.js route handler, export const post equals handler. That's not Vue at all."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the Vue steps are only in the markdown export, and they register the built-in agent with OpenAI, never a Llama Index agent. Uh, and no page shows how to wire it into the Vue server."
+  },
+  {
+   "at": "notepad-closed",
+   "text": "So yeah, that's the issue here, please get it fixed."
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+# secrets
+.env
+.env.*
+!.env.example
+# deps / builds
+node_modules/
+.next/
+.langgraph_api/
+dist/
+# recordings and scratch (clips go to Loom / CI artifacts, not git)
+*.webm
+*.mp4
+autorecorder/videos/
+clips-staging/
+staging/
+logs/
+*.log
+# recorder / pipeline run output
+runs/
+# narration: temp audio cache (CI) and fit reports; committed audio lives in narration/audio/
+narrate-audio/
+narration/**/*.fit.json
+# never commit keys or the private voice sample (VOICE.md section 2)
+*.env
+*.env.txt
+reference-*.wav
+ref16k.wav
+sample-full.wav

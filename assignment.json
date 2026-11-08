@@ -1,0 +1,607 @@
+{
+ "framework": "All agent frameworks (Vue quickstarts)",
+ "ui": "vue",
+ "repo": "Vue-Quickstarts",
+ "docBase": "https://docs.copilotkit.ai/vue/",
+ "versions": {
+  "@copilotkit/vue": "1.85.0",
+  "@copilotkit/runtime": "1.85.0",
+  "@copilotkit/core": "1.85.0",
+  "vue": "3.5.45",
+  "vite": "8.3.6",
+  "tsx": "4.23.15",
+  "typescript": "6.0.3"
+ },
+ "testedContext": {
+  "os": "Microsoft Windows 11 Pro",
+  "packageManager": "npm 12 (Node 26.7.0)"
+ },
+ "report": {
+  "style": "team",
+  "h1": "Vue quickstarts",
+  "title": "Vue quickstarts testing",
+  "quickstartHeading": "Quickstarts",
+  "quickstartHeader": null,
+  "clipsToUpload": true,
+  "guidesHeading": null,
+  "columns": [
+   "Page/Section",
+   "Vue"
+  ],
+  "resultColumn": 1
+ },
+ "sections": [],
+ "pages": [
+  {
+   "id": "quickstart-built-in-agent",
+   "label": "Built-in Agent (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "",
+   "framework": "built-in-agent",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Quickstart - Vue",
+     "clip": "VUEQS-built-in-agent-01-Quickstart",
+     "loom": null,
+     "narration": null
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   }
+  },
+  {
+   "id": "quickstart-langgraph-python",
+   "label": "LangGraph (Python) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "langgraph-python",
+   "framework": "langgraph-python",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a LangGraph (Python) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-langgraph-python-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-langgraph-python-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/langgraph-python"
+  },
+  {
+   "id": "quickstart-langgraph-fastapi",
+   "label": "LangGraph (FastAPI) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "langgraph-fastapi",
+   "framework": "langgraph-fastapi",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a LangGraph (FastAPI) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-langgraph-fastapi-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-langgraph-fastapi-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/langgraph-fastapi"
+  },
+  {
+   "id": "quickstart-google-adk",
+   "label": "Google ADK (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "google-adk",
+   "framework": "google-adk",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Google ADK agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-google-adk-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-google-adk-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/google-adk"
+  },
+  {
+   "id": "quickstart-mastra",
+   "label": "Mastra (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "mastra",
+   "framework": "mastra",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Mastra agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-mastra-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-mastra-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/mastra"
+  },
+  {
+   "id": "quickstart-crewai-crews",
+   "label": "CrewAI Crews (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "crewai-crews",
+   "framework": "crewai-crews",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a CrewAI Crews agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-crewai-crews-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-crewai-crews-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/crewai-crews"
+  },
+  {
+   "id": "quickstart-pydantic-ai",
+   "label": "Pydantic AI (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "pydantic-ai",
+   "framework": "pydantic-ai",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Pydantic AI agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-pydantic-ai-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-pydantic-ai-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/pydantic-ai"
+  },
+  {
+   "id": "quickstart-claude-sdk-python",
+   "label": "Claude Agent SDK (Python) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "claude-sdk-python",
+   "framework": "claude-sdk-python",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Claude Agent SDK (Python) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-claude-sdk-python-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-claude-sdk-python-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/claude-sdk-python"
+  },
+  {
+   "id": "quickstart-claude-sdk-typescript",
+   "label": "Claude Agent SDK (TypeScript) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "claude-sdk-typescript",
+   "framework": "claude-sdk-typescript",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Claude Agent SDK (TypeScript) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-claude-sdk-typescript-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-claude-sdk-typescript-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/claude-sdk-typescript"
+  },
+  {
+   "id": "quickstart-agno",
+   "label": "Agno (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "agno",
+   "framework": "agno",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Agno agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-agno-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-agno-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/agno"
+  },
+  {
+   "id": "quickstart-ag2",
+   "label": "AG2 (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "ag2",
+   "framework": "ag2",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a AG2 agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-ag2-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-ag2-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/ag2"
+  },
+  {
+   "id": "quickstart-llamaindex",
+   "label": "LlamaIndex (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "llamaindex",
+   "framework": "llamaindex",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a LlamaIndex agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-llamaindex-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-llamaindex-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/llamaindex"
+  },
+  {
+   "id": "quickstart-strands",
+   "label": "Strands (Python) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "strands",
+   "framework": "strands",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Strands (Python) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-strands-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-strands-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/strands"
+  },
+  {
+   "id": "quickstart-strands-typescript",
+   "label": "Strands (TypeScript) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "strands-typescript",
+   "framework": "strands-typescript",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Strands (TypeScript) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-strands-typescript-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-strands-typescript-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/strands-typescript"
+  },
+  {
+   "id": "quickstart-ms-agent-python",
+   "label": "Microsoft Agent Framework (Python) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "ms-agent-python",
+   "framework": "ms-agent-python",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Microsoft Agent Framework (Python) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-ms-agent-python-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-ms-agent-python-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/ms-agent-python"
+  },
+  {
+   "id": "quickstart-ms-agent-dotnet",
+   "label": "Microsoft Agent Framework (.NET) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "ms-agent-dotnet",
+   "framework": "ms-agent-dotnet",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Microsoft Agent Framework (.NET) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-ms-agent-dotnet-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-ms-agent-dotnet-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/ms-agent-dotnet"
+  },
+  {
+   "id": "quickstart-ms-agent-harness-dotnet",
+   "label": "Microsoft Agent Harness (.NET) (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "ms-agent-harness-dotnet",
+   "framework": "ms-agent-harness-dotnet",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Microsoft Agent Harness (.NET) agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-ms-agent-harness-dotnet-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-ms-agent-harness-dotnet-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/ms-agent-harness-dotnet"
+  },
+  {
+   "id": "quickstart-deepagents",
+   "label": "Deep Agents (Vue)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "deepagents",
+   "framework": "deepagents",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [
+    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Deep Agents agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "VUEQS-deepagents-01-Quickstart",
+     "loom": null,
+     "narration": "narration/scripts/VUEQS-deepagents-01-Quickstart.json"
+    }
+   ],
+   "review": {
+    "verdict": null,
+    "approvedAt": "2026-11-09",
+    "by": "owner"
+   },
+   "sidebarRoot": "vue/deepagents"
+  }
+ ]
+}

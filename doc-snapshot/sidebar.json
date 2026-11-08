@@ -1,0 +1,366 @@
+{
+ "root": "vue",
+ "savedAt": "2026-11-08",
+ "pages": [
+  {
+   "url": "/vue",
+   "name": "Quickstart",
+   "group": ""
+  },
+  {
+   "url": "/vue/using-these-docs",
+   "name": "Using these docs",
+   "group": ""
+  },
+  {
+   "url": "/vue/build-with-agents",
+   "name": "Build with agents",
+   "group": ""
+  },
+  {
+   "url": "/vue/intelligence/overview",
+   "name": "Intelligence",
+   "group": ""
+  },
+  {
+   "url": "/vue/prebuilt-components",
+   "name": "Prebuilt Components",
+   "group": "Basics > Chat"
+  },
+  {
+   "url": "/vue/custom-look-and-feel/slots",
+   "name": "Slots",
+   "group": "Basics > Chat > Custom Look and Feel"
+  },
+  {
+   "url": "/vue/custom-look-and-feel/headless-ui",
+   "name": "Headless UI",
+   "group": "Basics > Chat > Custom Look and Feel"
+  },
+  {
+   "url": "/vue/programmatic-control",
+   "name": "Programmatic Control",
+   "group": "Basics > Chat"
+  },
+  {
+   "url": "/vue/prebuilt-components/copilot-threads-drawer",
+   "name": "Threads Drawer",
+   "group": "Basics > Threads"
+  },
+  {
+   "url": "/vue/headless-threads",
+   "name": "Headless Threads",
+   "group": "Basics > Threads"
+  },
+  {
+   "url": "/vue/frontend-tools",
+   "name": "Frontend-tools",
+   "group": "Basics"
+  },
+  {
+   "url": "/vue/generative-ui/tool-based",
+   "name": "Components as Tools",
+   "group": "Generative UI > Controlled"
+  },
+  {
+   "url": "/vue/generative-ui/tool-rendering",
+   "name": "Tool Call Rendering",
+   "group": "Generative UI > Controlled"
+  },
+  {
+   "url": "/vue/generative-ui/state-rendering",
+   "name": "State Rendering",
+   "group": "Generative UI > Controlled"
+  },
+  {
+   "url": "/vue/generative-ui/mcp-apps",
+   "name": "MCP Apps",
+   "group": "Generative UI > Open-ended"
+  },
+  {
+   "url": "/vue/shared-state",
+   "name": "Shared State",
+   "group": "Interactivity > Shared state"
+  },
+  {
+   "url": "/vue/shared-state/rendering-in-app",
+   "name": "Render agent state in your app",
+   "group": "Interactivity > Shared state"
+  },
+  {
+   "url": "/vue/shared-state/streaming",
+   "name": "State Streaming",
+   "group": "Interactivity > Shared state"
+  },
+  {
+   "url": "/vue/shared-state/agent-readonly",
+   "name": "Agent Read-Only Context",
+   "group": "Interactivity > Shared state"
+  },
+  {
+   "url": "/vue/human-in-the-loop",
+   "name": "HITL Overview",
+   "group": "Interactivity > Human-in-the-loop"
+  },
+  {
+   "url": "/vue/human-in-the-loop/useInterrupt",
+   "name": "Pausing the Agent for Input",
+   "group": "Interactivity > Human-in-the-loop"
+  },
+  {
+   "url": "/vue/human-in-the-loop/headless",
+   "name": "Headless Interrupts",
+   "group": "Interactivity > Human-in-the-loop"
+  },
+  {
+   "url": "/vue/human-in-the-loop/governed-actions",
+   "name": "Governed Action Approval UI",
+   "group": "Interactivity > Human-in-the-loop"
+  },
+  {
+   "url": "/vue/webmcp",
+   "name": "WebMCP",
+   "group": "Interactivity"
+  },
+  {
+   "url": "/vue/multi-agent/subagents",
+   "name": "Sub-agents",
+   "group": "Agent capabilities"
+  },
+  {
+   "url": "/vue/intelligence/quickstart",
+   "name": "Quickstart",
+   "group": "Intelligence > Get started"
+  },
+  {
+   "url": "/vue/intelligence/intelligence-platform",
+   "name": "Architecture",
+   "group": "Intelligence > Get started"
+  },
+  {
+   "url": "/vue/intelligence/plans",
+   "name": "Plans",
+   "group": "Intelligence > Get started"
+  },
+  {
+   "url": "/vue/AG-UI-Streams",
+   "name": "Overview",
+   "group": "Intelligence > Features > AG-UI Streams"
+  },
+  {
+   "url": "/vue/intelligence/bring-your-own-thread-system",
+   "name": "Bring your own thread system",
+   "group": "Intelligence > Features > AG-UI Streams"
+  },
+  {
+   "url": "/vue/threads-import",
+   "name": "Add to Existing Threads",
+   "group": "Intelligence > Features > AG-UI Streams"
+  },
+  {
+   "url": "/vue/threads-lifecycle",
+   "name": "Thread & History Lifecycle",
+   "group": "Intelligence > Features > AG-UI Streams"
+  },
+  {
+   "url": "/vue/intelligence/threads-explained",
+   "name": "Streams & Framework Threads",
+   "group": "Intelligence > Features > AG-UI Streams"
+  },
+  {
+   "url": "/vue/learning",
+   "name": "Automatic Learning",
+   "group": "Intelligence > Features > Automatic Learning"
+  },
+  {
+   "url": "/vue/intelligence/learned-skills",
+   "name": "Skill delivery",
+   "group": "Intelligence > Features > Automatic Learning"
+  },
+  {
+   "url": "/vue/intelligence/memories",
+   "name": "User Memories",
+   "group": "Intelligence > Features"
+  },
+  {
+   "url": "/vue/intelligence/trajectories",
+   "name": "Trajectories",
+   "group": "Intelligence > Features > Trajectories"
+  },
+  {
+   "url": "/vue/intelligence/captured-data",
+   "name": "Captured data",
+   "group": "Intelligence > Features > Trajectories"
+  },
+  {
+   "url": "/vue/intelligence/trajectories-reference",
+   "name": "API reference",
+   "group": "Intelligence > Features > Trajectories"
+  },
+  {
+   "url": "/vue/intelligence/standalone-collector",
+   "name": "Standalone collector",
+   "group": "Intelligence > Features"
+  },
+  {
+   "url": "/vue/intelligence/analytics",
+   "name": "Product Analytics",
+   "group": "Intelligence > Features"
+  },
+  {
+   "url": "/vue/intelligence/channels",
+   "name": "Channels",
+   "group": "Intelligence > Features"
+  },
+  {
+   "url": "/vue/intelligence/managed-intelligence-platform",
+   "name": "Cloud-hosted",
+   "group": "Intelligence > Hosting"
+  },
+  {
+   "url": "/vue/intelligence/self-hosting",
+   "name": "Self-hosted",
+   "group": "Intelligence > Hosting"
+  },
+  {
+   "url": "/vue/intelligence/self-hosting-ecs",
+   "name": "AWS ECS/Fargate",
+   "group": "Intelligence > Hosting"
+  },
+  {
+   "url": "/vue/intelligence/self-hosting-local",
+   "name": "Local evaluation",
+   "group": "Intelligence > Hosting"
+  },
+  {
+   "url": "/vue/backend/copilot-runtime",
+   "name": "Copilot Runtime",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/backend/runtime-endpoints",
+   "name": "Runtime HTTP endpoints",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/backend/custom-agent",
+   "name": "Use any model router",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/backend/custom-ag-ui-agent",
+   "name": "Write your own AG-UI agent",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/backend/agent-runner",
+   "name": "AgentRunner and persistence",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/backend/message-history",
+   "name": "Message history",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/backend/self-managed-agents",
+   "name": "Self-managed agents",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/backend/ag-ui",
+   "name": "Connect AG-UI agents",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/runtime-server-adapter",
+   "name": "Deploy to any runtime",
+   "group": "Backend > Runtime"
+  },
+  {
+   "url": "/vue/deploy/agentcore",
+   "name": "AWS AgentCore",
+   "group": "Backend > Deployment"
+  },
+  {
+   "url": "/vue/deploy/aws-lambda",
+   "name": "AWS Lambda",
+   "group": "Backend > Deployment"
+  },
+  {
+   "url": "/vue/deploy/langsmith",
+   "name": "LangSmith Platform",
+   "group": "Backend > Deployment"
+  },
+  {
+   "url": "/vue/inspector",
+   "name": "Inspector",
+   "group": "Backend > Debugging"
+  },
+  {
+   "url": "/vue/concepts/architecture",
+   "name": "Architecture",
+   "group": "Learn > Concepts"
+  },
+  {
+   "url": "/vue/concepts/generative-ui-overview",
+   "name": "Generative UI",
+   "group": "Learn > Concepts"
+  },
+  {
+   "url": "/vue/concepts/which-hook",
+   "name": "Which Hook for Which Job",
+   "group": "Learn > Concepts"
+  },
+  {
+   "url": "/vue/concepts/oss-vs-enterprise",
+   "name": "Open source vs Intelligence",
+   "group": "Learn > Concepts"
+  },
+  {
+   "url": "/vue/agentic-protocols",
+   "name": "Agentic Protocols",
+   "group": "Learn > Concepts > Agentic Protocols"
+  },
+  {
+   "url": "/vue/agentic-protocols/ag-ui",
+   "name": "AG-UI",
+   "group": "Learn > Concepts > Agentic Protocols"
+  },
+  {
+   "url": "/vue/agentic-protocols/ag-ui-middleware",
+   "name": "AG-UI Middleware",
+   "group": "Learn > Concepts > Agentic Protocols"
+  },
+  {
+   "url": "/vue/agentic-protocols/mcp",
+   "name": "MCP",
+   "group": "Learn > Concepts > Agentic Protocols"
+  },
+  {
+   "url": "/vue/agentic-protocols/a2a",
+   "name": "A2A",
+   "group": "Learn > Concepts > Agentic Protocols"
+  },
+  {
+   "url": "/vue/troubleshooting/common-issues",
+   "name": "Common Copilot Issues",
+   "group": "Other > Troubleshooting"
+  },
+  {
+   "url": "/vue/troubleshooting/debug-mode",
+   "name": "Debug Mode",
+   "group": "Other > Troubleshooting"
+  },
+  {
+   "url": "/vue/troubleshooting/event-inspector",
+   "name": "AG-UI Event Inspector",
+   "group": "Other > Troubleshooting"
+  },
+  {
+   "url": "/vue/community-frameworks",
+   "name": "Community frameworks",
+   "group": "Other"
+  }
+ ]
+}
