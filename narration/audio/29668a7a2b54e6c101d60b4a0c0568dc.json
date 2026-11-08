@@ -1,0 +1,9 @@
+{
+ "text": "And the only code it shows is a Next.js route handler, export const post equals handler. That's not Vue at all.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 9.056,
+ "file": "29668a7a2b54e6c101d60b4a0c0568dc.mp3",
+ "clip": "VUEQS-ag2-01-Quickstart",
+ "at": "evidence#2"
+}

@@ -1,0 +1,9 @@
+{
+ "text": "Moving on to the demo. So I asked the chat which agent framework it is, and uh, it does answer, but from the built-in OpenAI agent, not LangGraph FastAPI. No step on this page ever connects a LangGraph FastAPI agent.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 16.951,
+ "file": "fe9bf68197949dec7e07c65a344d3215.mp3",
+ "clip": "VUEQS-langgraph-fastapi-01-Quickstart",
+ "at": "demo"
+}

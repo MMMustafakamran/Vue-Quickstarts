@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the Vue steps are only in the markdown export, and they register the built-in agent with OpenAI, never a Microsoft Agent Framework, Python agent. Uh, and no page shows how to wire it into the Vue server.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 15.65,
+ "file": "05fb3517cc9b6cff0e48bdd92d8cedea.mp3",
+ "clip": "VUEQS-ms-agent-python-01-Quickstart",
+ "at": "notepad"
+}

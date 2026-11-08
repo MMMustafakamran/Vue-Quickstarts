@@ -1,0 +1,9 @@
+{
+ "text": "Moving on to the demo. So I asked the chat which agent framework it is, and uh, it does answer, but from the built-in OpenAI agent, not Agno. No step on this page ever connects a Agno agent.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 14.861,
+ "file": "2c5094ecc6edc0d2f3f2b58f613afdd1.mp3",
+ "clip": "VUEQS-agno-01-Quickstart",
+ "at": "demo"
+}

@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the Vue steps are only in the markdown export, and they register the built-in agent with OpenAI, never a Pydantic A I agent. Uh, and no page shows how to wire it into the Vue server.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 14.211,
+ "file": "41dd2d45965bd268f288c049be7d3a68.mp3",
+ "clip": "VUEQS-pydantic-ai-01-Quickstart",
+ "at": "notepad"
+}

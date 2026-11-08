@@ -1,0 +1,9 @@
+{
+ "text": "Moving on to the demo. So I asked the chat which agent framework it is, and uh, it does answer, but from the built-in OpenAI agent, not Llama Index. No step on this page ever connects a Llama Index agent.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 13.978,
+ "file": "64c56865d685514512928e18fa3e8447.mp3",
+ "clip": "VUEQS-llamaindex-01-Quickstart",
+ "at": "demo"
+}

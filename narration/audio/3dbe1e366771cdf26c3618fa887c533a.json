@@ -1,0 +1,9 @@
+{
+ "text": "Moving on to the demo. So I asked the chat which agent framework it is, and uh, it does answer, but from the built-in OpenAI agent, not Microsoft Agent Framework, dot net. No step on this page ever connects a Microsoft Agent Framework, dot net agent.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 17.554,
+ "file": "3dbe1e366771cdf26c3618fa887c533a.mp3",
+ "clip": "VUEQS-ms-agent-dotnet-01-Quickstart",
+ "at": "demo"
+}
