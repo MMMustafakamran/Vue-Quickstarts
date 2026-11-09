@@ -99,58 +99,102 @@ export async function showDocEvidence(page: Page, config: PageRecordConfig): Pro
 }
 
 /**
- * Scroll the way a person does: cursor over the page, mouse-wheel in short bursts with pauses,
- * until the target sits in the middle of the screen. No injected UI, no programmatic jump.
+ * Where the wheel scrolls the doc page itself. docs.copilotkit.ai scrolls a full-height <div>, not
+ * the window; code boxes (max-h 600px) and the sidebars have their own scrollbars and would eat the
+ * wheel, and the sticky header scrolls nothing. Probe a few points over the article and keep the
+ * first whose nearest scrolling ancestor is the page scroller (clientHeight >= 70% of the window and
+ * containing the article: the sidebar is tall too).
  */
-async function wheelIntoView(page: Page, target: Locator, text?: string): Promise<void> {
-  await humanGlide(page, 760, 520);
-  // Stop when the wheel no longer moves anything (end of the page, and the block under the
-  // cursor scrolled as far as it goes): otherwise a target near the bottom sits still on
-  // camera for the whole loop. A code block scrolling under the cursor counts as movement.
-  let lastScroll = Number.NaN;
-  let stalls = 0;
-  for (let i = 0; i < 50; i++) {
-    const box = await target.boundingBox().catch(() => null);
-    if (!box) break;
-    // Steer by the exact text when given: code blocks scroll on their own, so the line can sit
-    // far below the block's top. Keeping the cursor over the block makes the wheel scroll the
-    // block first, then the page, the same as a person scrolling over it.
-    const textY = text ? await textCentreY(target, text) : null;
-    const centre = textY ?? box.y + Math.min(box.height, 120) / 2;
-    const overX = box.x + Math.min(box.width / 2, 260);
-    const overY = Math.min(Math.max(box.y + 40, 160), Math.min(box.y + box.height - 20, 900));
-    const { x, y } = getGlobalCursorPos();
-    if (Math.abs(x - overX) > 60 || Math.abs(y - overY) > 60) await humanGlide(page, overX, overY);
-    const off = centre - 470;
-    if (Math.abs(off) < 140) break;
-    const scrolled = await scrollTotalAt(page);
-    stalls = Math.abs(scrolled - lastScroll) < 2 ? stalls + 1 : 0;
-    if (stalls >= 2) break;
-    lastScroll = scrolled;
-    const burst = Math.sign(off) * Math.min(Math.abs(off), 300 + Math.random() * 200);
-    const notches = Math.max(2, Math.round(Math.abs(burst) / 100));
-    for (let n = 0; n < notches; n++) {
-      await page.mouse.wheel(0, burst / notches);
-      await sleep(35 + Math.random() * 45);
-    }
-    await sleep(250 + Math.random() * 450);
-  }
-  await sleep(600);
+async function pageWheelPoint(page: Page): Promise<{ x: number; y: number } | null> {
+  return page
+    .evaluate(() => {
+      const art = document.querySelector('article') ?? document.querySelector('main');
+      const r = art ? art.getBoundingClientRect() : { left: 300, right: window.innerWidth - 300 };
+      const xs = [r.left + 6, r.left + 18, r.right - 8, (r.left + r.right) / 2];
+      const h = window.innerHeight;
+      const ys = [h * 0.5, h * 0.4, h * 0.62, h * 0.3, h * 0.72];
+      const pts: { x: number; y: number }[] = [];
+      for (const y of ys) for (const x of xs) pts.push({ x, y });
+      for (const p of pts) {
+        let el = document.elementFromPoint(p.x, p.y) as HTMLElement | null;
+        for (; el && el !== document.body; el = el.parentElement) {
+          const oy = getComputedStyle(el).overflowY;
+          if ((oy === 'auto' || oy === 'scroll') && el.scrollHeight > el.clientHeight + 4) break;
+        }
+        if (el && el !== document.body && el.clientHeight >= h * 0.7 && (!art || el.contains(art))) return p;
+      }
+      return null;
+    })
+    .catch(() => null);
 }
 
-/** Page scroll plus the scroll of every scrollable box under the cursor (plain loop: see locateText). */
-async function scrollTotalAt(page: Page): Promise<number> {
-  const { x, y } = getGlobalCursorPos();
-  return page
-    .evaluate(
-      (p) => {
-        let total = window.scrollY;
-        for (let el = document.elementFromPoint(p.x, p.y); el; el = el.parentElement) total += el.scrollTop;
-        return total;
-      },
-      { x, y },
-    )
-    .catch(() => Number.NaN);
+/** The text's centre Y, and the rect of its own (non-page) scroll box if it sits in one. */
+async function scrollInfo(target: Locator, text?: string): Promise<{ textY: number | null; inner: { top: number; bottom: number; left: number; right: number } | null }> {
+  const textY = text ? await textCentreY(target, text) : null;
+  const inner = await target
+    .evaluate((el) => {
+      const h = window.innerHeight;
+      for (let e: HTMLElement | null = el as HTMLElement; e && e !== document.body; e = e.parentElement) {
+        const oy = getComputedStyle(e).overflowY;
+        if ((oy === 'auto' || oy === 'scroll') && e.scrollHeight > e.clientHeight + 4) {
+          if (e.clientHeight >= h * 0.7) return null; // the page scroller
+          const r = e.getBoundingClientRect();
+          return { top: r.top, bottom: r.bottom, left: r.left, right: r.right };
+        }
+      }
+      return null;
+    })
+    .catch(() => null);
+  return { textY, inner };
+}
+
+async function wheelBurst(page: Page, delta: number): Promise<void> {
+  const notches = Math.max(2, Math.round(Math.abs(delta) / 100));
+  for (let n = 0; n < notches; n++) {
+    await page.mouse.wheel(0, delta / notches);
+    await sleep(35 + Math.random() * 45);
+  }
+  await sleep(250 + Math.random() * 400);
+}
+
+/**
+ * Scroll the way a person does (mouse-wheel bursts, no programmatic jump): wheel the page from a
+ * point that scrolls the page until the text is mid-screen; if the text sits in a code box with its
+ * own scrollbar, wheel over that box until the line is inside it. Stops when the page can't move
+ * further (target near the top/bottom), instead of looping on the spot.
+ */
+async function wheelIntoView(page: Page, target: Locator, text?: string): Promise<void> {
+  const vh = page.viewportSize()?.height ?? 900;
+  const mid = vh * 0.5;
+  let lastPageY: number | null = null;
+  for (let i = 0; i < 60; i++) {
+    const box = await target.boundingBox().catch(() => null);
+    if (!box) break;
+    const { textY, inner } = await scrollInfo(target, text);
+    const ty = textY ?? box.y + Math.min(box.height, 120) / 2;
+    // 1. The box is on screen but the line is scrolled away inside it: wheel over the box.
+    if (inner && inner.top > 60 && inner.bottom < vh - 30 && (ty < inner.top + 24 || ty > inner.bottom - 24)) {
+      const cx = inner.left + Math.min(220, (inner.right - inner.left) / 2);
+      const cy = (inner.top + inner.bottom) / 2;
+      const { x, y } = getGlobalCursorPos();
+      if (Math.abs(x - cx) > 40 || Math.abs(y - cy) > 40) await humanGlide(page, cx, cy);
+      const want = ty - cy;
+      await wheelBurst(page, Math.sign(want) * Math.min(Math.abs(want), 420));
+      continue;
+    }
+    // 2. Otherwise move the page so the line (or the box) sits mid-screen.
+    const anchor = inner && (ty < inner.top || ty > inner.bottom) ? (inner.top + inner.bottom) / 2 : ty;
+    const off = anchor - mid;
+    if (Math.abs(off) < 140) break;
+    // Page already at its top or bottom: the line can't get closer to the middle, stop wheeling.
+    if (lastPageY !== null && Math.abs(anchor - lastPageY) < 4 && anchor > 70 && anchor < vh - 30) break;
+    lastPageY = anchor;
+    const pt = (await pageWheelPoint(page)) ?? { x: 40, y: mid };
+    const { x, y } = getGlobalCursorPos();
+    if (Math.abs(x - pt.x) > 60 || Math.abs(y - pt.y) > 60) await humanGlide(page, pt.x, pt.y);
+    await wheelBurst(page, Math.sign(off) * Math.min(Math.abs(off), 300 + Math.random() * 200));
+  }
+  await sleep(600);
 }
 
 interface TextSpan { sx: number; sy: number; ex: number; ey: number }
@@ -208,15 +252,15 @@ async function textCentreY(target: Locator, text: string): Promise<number | null
 /**
  * Highlight `text` inside `target` with a real mouse drag (press at its first character,
  * drag to its last, release), so the browser's own text selection marks the faulty snippet.
- * Falls back to the element's first line when the exact text can't be located.
+ * Skipped (with a warning) when the exact text is not on screen.
  */
 async function dragSelect(page: Page, target: Locator, text: string): Promise<void> {
-  let pts = await locateText(target, text);
-  if (!pts) {
-    console.warn(`   ⚠️ Exact text not rendered, selecting the element's first line: "${text}"`);
-    const b = await target.boundingBox();
-    if (!b) return;
-    pts = { sx: b.x + 4, sy: b.y + 12, ex: Math.min(b.x + b.width - 4, b.x + 700), ey: b.y + 12 };
+  const pts = await locateText(target, text);
+  const vh = page.viewportSize()?.height ?? 900;
+  // Never drag at a guess: a miss selects whatever is under the cursor (the docs banner, prose).
+  if (!pts || pts.sy < 70 || pts.ey > vh - 30) {
+    console.warn(`   ⚠️ Text not on screen, not selecting: "${text}"`);
+    return;
   }
   await humanGlide(page, pts.sx - 3, pts.sy);
   await sleep(300 + Math.random() * 300);
