@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the Vue steps are only in the markdown export, and they use the built-in OpenAI agent, never a Mastra agent.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 8.87,
+ "file": "2ce4c7ba0e48f94ff43b6d233fe30a9b.mp3",
+ "clip": "VUEQS-mastra-01-Quickstart",
+ "at": "notepad"
+}

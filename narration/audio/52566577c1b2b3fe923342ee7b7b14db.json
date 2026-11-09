@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the Vue steps are only in the markdown export, and they use the built-in OpenAI agent, never a Strands Python agent.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 10.681,
+ "file": "52566577c1b2b3fe923342ee7b7b14db.mp3",
+ "clip": "VUEQS-strands-01-Quickstart",
+ "at": "notepad"
+}
