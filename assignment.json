@@ -550,7 +550,8 @@
    "reachable": "sidebar",
    "status": "❌",
    "findings": [
-    1
+    1,
+    6
    ],
    "notes": [
     "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Microsoft Agent Harness (.NET) agent."

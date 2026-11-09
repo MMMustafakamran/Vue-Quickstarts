@@ -34,3 +34,4 @@ Stack: `@copilotkit/vue`/`runtime`/`core` 1.85.0 (declared ^1.85.0), `vue` 3.5.4
 - #3 `export OPENAI_API_KEY=sk-...` is bash-only, with no Windows form.
 - #4 `App.vue` hardcodes `http://localhost:8200/api/copilotkit` while `server.ts` honours `PORT`, so a port change means editing both.
 - #5 The landing page's embedded live demo (`showcase-<framework>-production.up.railway.app/vue/agentic-chat`) returns `404` for 15 frameworks; Agno's works (a Vue showcase) and Deep Agents embeds a Loom video instead.
+- #6 [Microsoft Agent Harness (.NET)](https://docs.copilotkit.ai/vue/ms-agent-harness-dotnet): the rendered page is the Microsoft Agent Framework landing page ("Bring your Microsoft Agent Framework agents into any app", "Build with Microsoft Agent Framework"), with no mention of Agent Harness in its headings.

@@ -4,11 +4,11 @@
  "segments": [
   {
    "at": "doc",
-   "text": "Ok so, this is the quickstart page in the CopilotKit docs, for Vue with Crew AI Crews. And umm, I have implemented this page in my project."
+   "text": "Ok so, this is the quickstart page in the CopilotKit docs, for Vue with Crew AI Crews. And I have implemented this page."
   },
   {
    "at": "ide",
-   "text": "This is my project, with the server dot ts, main dot ts and app dot vue from the doc, copied as they are."
+   "text": "This is my project, with the server dot ts, main dot ts and app dot vue from the doc, umm, only the port is changed."
   },
   {
    "at": "demo",
