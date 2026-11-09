@@ -49,7 +49,7 @@
     {
      "text": "Quickstart - Vue",
      "clip": "VUEQS-built-in-agent-01-Quickstart",
-     "loom": "https://www.loom.com/share/530b6c60ce9249f8a5dfa9c65ea984c4",
+     "loom": "https://www.loom.com/share/1164a3b59f2946549f5b871b89e3b17e",
      "narration": null
     }
    ],
@@ -80,7 +80,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-langgraph-python-01-Quickstart",
-     "loom": "https://www.loom.com/share/87e2c81a566645e19abca9fe15e02571",
+     "loom": "https://www.loom.com/share/635cd961e82a4354a04fedfad61a4ad9",
      "narration": "narration/scripts/VUEQS-langgraph-python-01-Quickstart.json"
     }
    ],
@@ -112,7 +112,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-langgraph-fastapi-01-Quickstart",
-     "loom": "https://www.loom.com/share/0b25bfa71bba476dbaf28c27828779cb",
+     "loom": "https://www.loom.com/share/a212d0bc69884f7e8478667dd4770e8f",
      "narration": "narration/scripts/VUEQS-langgraph-fastapi-01-Quickstart.json"
     }
    ],
@@ -144,7 +144,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-google-adk-01-Quickstart",
-     "loom": "https://www.loom.com/share/affeb524d9f74ef9a6f6d21e984e43dd",
+     "loom": "https://www.loom.com/share/fbe99167445b4bfa8d0c9d7d5bc0d261",
      "narration": "narration/scripts/VUEQS-google-adk-01-Quickstart.json"
     }
    ],
@@ -176,7 +176,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-mastra-01-Quickstart",
-     "loom": "https://www.loom.com/share/15a62d8a68054389baddcc8dd538550e",
+     "loom": "https://www.loom.com/share/322786fca3634276a849112a47fcd42d",
      "narration": "narration/scripts/VUEQS-mastra-01-Quickstart.json"
     }
    ],
@@ -240,7 +240,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-pydantic-ai-01-Quickstart",
-     "loom": "https://www.loom.com/share/43d4f03d0c404a4181e59bc27dfde953",
+     "loom": "https://www.loom.com/share/ba3966afcbff415fa430130f68327d85",
      "narration": "narration/scripts/VUEQS-pydantic-ai-01-Quickstart.json"
     }
    ],
@@ -272,7 +272,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-claude-sdk-python-01-Quickstart",
-     "loom": "https://www.loom.com/share/12af0c2340c74292bd663bf75f2e6766",
+     "loom": "https://www.loom.com/share/0063ce5865df4da58010f5483fa631cc",
      "narration": "narration/scripts/VUEQS-claude-sdk-python-01-Quickstart.json"
     }
    ],
@@ -304,7 +304,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-claude-sdk-typescript-01-Quickstart",
-     "loom": "https://www.loom.com/share/3a68d9b1497248c4852772161c7fc5c7",
+     "loom": "https://www.loom.com/share/877b005c56244b76903d822651938e6f",
      "narration": "narration/scripts/VUEQS-claude-sdk-typescript-01-Quickstart.json"
     }
    ],
@@ -336,7 +336,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-agno-01-Quickstart",
-     "loom": "https://www.loom.com/share/1bf1a67a9d364ca5a3fa3135185ad884",
+     "loom": "https://www.loom.com/share/ef4485260dcb44b08d3fba009ef990ba",
      "narration": "narration/scripts/VUEQS-agno-01-Quickstart.json"
     }
    ],
@@ -400,7 +400,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-llamaindex-01-Quickstart",
-     "loom": "https://www.loom.com/share/07d7f1ca602e427caf1e259248888c14",
+     "loom": "https://www.loom.com/share/95df82d919a640a9be74fcdfaf55aaf7",
      "narration": "narration/scripts/VUEQS-llamaindex-01-Quickstart.json"
     }
    ],
@@ -432,7 +432,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-strands-01-Quickstart",
-     "loom": "https://www.loom.com/share/48fa350bfc0148b1ad89aa99d1d0700f",
+     "loom": "https://www.loom.com/share/8557d0c8a2d843a88e0e892447431c80",
      "narration": "narration/scripts/VUEQS-strands-01-Quickstart.json"
     }
    ],
@@ -464,7 +464,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-strands-typescript-01-Quickstart",
-     "loom": "https://www.loom.com/share/17fef22ec11e4516b9ecce21ed1921d7",
+     "loom": "https://www.loom.com/share/a64b9063a0c049ca92c8f123ac73a5d2",
      "narration": "narration/scripts/VUEQS-strands-typescript-01-Quickstart.json"
     }
    ],
@@ -496,7 +496,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-ms-agent-python-01-Quickstart",
-     "loom": "https://www.loom.com/share/a744a6d8864643ecb74689ba23c0cd22",
+     "loom": "https://www.loom.com/share/3269a11dc089422b915b27ed9a4153ef",
      "narration": "narration/scripts/VUEQS-ms-agent-python-01-Quickstart.json"
     }
    ],
@@ -560,7 +560,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-ms-agent-harness-dotnet-01-Quickstart",
-     "loom": "https://www.loom.com/share/321022b700b7499e97a4fe50fc295287",
+     "loom": "https://www.loom.com/share/f6f6399a9244446992f2b25a116cfe10",
      "narration": "narration/scripts/VUEQS-ms-agent-harness-dotnet-01-Quickstart.json"
     }
    ],
@@ -592,7 +592,7 @@
     {
      "text": "Issue",
      "clip": "VUEQS-deepagents-01-Quickstart",
-     "loom": "https://www.loom.com/share/99545c8b82b04304ba5841123928cf88",
+     "loom": "https://www.loom.com/share/4338b63b0c8247e0bfb4d9ac90df124d",
      "narration": "narration/scripts/VUEQS-deepagents-01-Quickstart.json"
     }
    ],
