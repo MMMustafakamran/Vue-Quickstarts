@@ -16,7 +16,7 @@
   },
   {
    "at": "evidence#1",
-   "text": "So look at this. The Vue quickstart link opens the Agno landing page, and umm, it's all about the React frontend."
+   "text": "So the Vue quickstart link opens the Agno landing page, all about React."
   },
   {
    "at": "evidence#2",
@@ -24,10 +24,10 @@
   },
   {
    "at": "notepad",
-   "text": "So basically, the Vue steps are only in the markdown export, and they register the built-in agent with OpenAI, never a Agno agent. Uh, and no page shows how to wire it into the Vue server."
+   "text": "So basically, the Vue steps are only in the markdown export, and they use the built-in OpenAI agent, never a Agno agent."
   },
   {
-   "at": "notepad-closed",
+   "at": "+",
    "text": "Alright, that's the issue, kindly sort it out."
   }
  ]
