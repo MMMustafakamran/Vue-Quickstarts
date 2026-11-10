@@ -7,7 +7,26 @@
 import { definePages } from '../core/types';
 import { FRAMEWORKS, clipStem, pageId } from './frameworks';
 
-export const SKIP_RECORDING: Record<string, string> = {};
+// Owner, 2026-11-10: only the BuiltInAgent quickstart is built for Vue; the others are reported as text.
+export const SKIP_RECORDING: Record<string, string> = {
+  'quickstart-langgraph-python': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-langgraph-fastapi': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-google-adk': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-mastra': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-crewai-crews': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-pydantic-ai': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-claude-sdk-python': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-claude-sdk-typescript': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-agno': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-ag2': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-llamaindex': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-strands': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-strands-typescript': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-ms-agent-python': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-ms-agent-dotnet': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-ms-agent-harness-dotnet': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+  'quickstart-deepagents': 'Not built for Vue yet: the page shows the React landing page (owner, 2026-11-10). Drift is still checked; record again once the doc is fixed.',
+};
 
 export const PAGES = definePages(
   FRAMEWORKS.map((f) => ({
