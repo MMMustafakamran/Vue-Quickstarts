@@ -73,7 +73,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a LangGraph (Python) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a LangGraph (Python) agent."
    ],
    "block": null,
    "links": [
@@ -105,7 +105,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a LangGraph (FastAPI) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a LangGraph (FastAPI) agent."
    ],
    "block": null,
    "links": [
@@ -137,7 +137,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Google ADK agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Google ADK agent."
    ],
    "block": null,
    "links": [
@@ -169,7 +169,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Mastra agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Mastra agent."
    ],
    "block": null,
    "links": [
@@ -201,7 +201,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a CrewAI Crews agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a CrewAI Crews agent."
    ],
    "block": null,
    "links": [
@@ -233,7 +233,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Pydantic AI agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Pydantic AI agent."
    ],
    "block": null,
    "links": [
@@ -265,7 +265,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Claude Agent SDK (Python) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Claude Agent SDK (Python) agent."
    ],
    "block": null,
    "links": [
@@ -297,7 +297,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Claude Agent SDK (TypeScript) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Claude Agent SDK (TypeScript) agent."
    ],
    "block": null,
    "links": [
@@ -329,7 +329,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Agno agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Agno agent."
    ],
    "block": null,
    "links": [
@@ -361,7 +361,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a AG2 agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a AG2 agent."
    ],
    "block": null,
    "links": [
@@ -393,7 +393,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a LlamaIndex agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a LlamaIndex agent."
    ],
    "block": null,
    "links": [
@@ -425,7 +425,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Strands (Python) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Strands (Python) agent."
    ],
    "block": null,
    "links": [
@@ -457,7 +457,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Strands (TypeScript) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Strands (TypeScript) agent."
    ],
    "block": null,
    "links": [
@@ -489,7 +489,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Microsoft Agent Framework (Python) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Microsoft Agent Framework (Python) agent."
    ],
    "block": null,
    "links": [
@@ -521,7 +521,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Microsoft Agent Framework (.NET) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Microsoft Agent Framework (.NET) agent."
    ],
    "block": null,
    "links": [
@@ -554,7 +554,7 @@
     6
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Microsoft Agent Harness (.NET) agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Microsoft Agent Harness (.NET) agent."
    ],
    "block": null,
    "links": [
@@ -586,7 +586,7 @@
     1
    ],
    "notes": [
-    "Issue: the live page is the React landing page with a Next.js route.ts; the Vue steps exist only in the .md export and register OpenAI BuiltInAgent, never a Deep Agents agent."
+    "Issue: the live Vue quickstart page is the React landing page with a Next.js route.ts; no Vue steps and no way shown to connect a Deep Agents agent."
    ],
    "block": null,
    "links": [
