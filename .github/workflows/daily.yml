@@ -2,7 +2,7 @@ name: Daily QA run
 
 # Daily doc-QA run for Vue-Quickstarts (the Vue quickstart of every agent framework) (generated from the workspace template; README "Daily CI").
 #   plan    -> doc drift: pages whose doc changed are held, not recorded (DRIFT.md);
-#              versions a new reader gets today (lockfiles re-resolved); page list split into shards
+#              versions a new reader gets today (CopilotKit + AG-UI latest); page list split into shards
 #   record  -> one runner per shard: today's lockfiles, own servers (start-all.sh), records its pages
 #   report  -> narration fit/mix (saved audio only), clip checks, summary, ONE artifact run-<date>
 # No LLM, no Fish key, no voice sample in CI. The only secret is the doc agents' model key,
@@ -68,7 +68,7 @@ jobs:
           cache-dependency-path: autorecorder/package-lock.json
       - name: Install recorder (to read the page list)
         run: npm ci --prefix autorecorder --no-audit --no-fund --ignore-scripts
-      - name: Versions a new reader gets today (lockfiles re-resolved within the package.json ranges)
+      - name: Versions a new reader gets today (CopilotKit + AG-UI at latest, the rest within range)
         if: ${{ !inputs.use_lockfile }}
         env:
           UV_PYTHON_DOWNLOADS: never

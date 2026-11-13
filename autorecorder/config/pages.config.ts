@@ -43,6 +43,8 @@ export const PAGES = definePages(
       { filePath: 'my-copilot-app/src/main.ts', startLine: 1, endLine: 5 },
       { filePath: 'my-copilot-app/src/App.vue', startLine: 1, endLine: 14 },
       { filePath: 'my-copilot-app/package.json', startLine: 13, endLine: 17 },
+      // Installed versions (scripts/write-versions.mjs, written after the final install in each CI shard).
+      { filePath: 'my-copilot-app/VERSIONS.md', startLine: 6, endLine: 14 },
     ],
     prompt: 'Which agent framework are you?',
     waitAfterPromptMs: 3000,
